@@ -1,0 +1,121 @@
+@import "../vars.sass"
+
+.container
+  @apply px-24
+.textPrimary
+  font-size: 18px
+  color: $cPrimary
+.gridHero
+  @apply grid grid-cols-2 gap-6
+.heroH2
+  @apply text-5xl
+  font-family: "Montserrat-Alternates-Bold", "sans-serif"
+  line-height: 64px
+.heroProfile
+  @apply flex justify-end items-center
+.heroProfileImgWrap
+  width: 300px
+  height: 300px
+  position: relative
+  border: 2px solid $cWhite
+  &::before
+    content: ""
+    z-index: -2
+    position: absolute
+    width: 300px
+    height: 300px
+    bottom: -10px
+    left: -10px
+    border: 2px solid $cPrimary
+    transition: .4s all
+  &::after
+    content: ""
+    z-index: 1
+    position: absolute
+    width: 300px
+    height: 300px
+    top: 0
+    left: 0
+    background-color: rgba(3, 166, 150, .3)
+    transition: .4s all
+  &:hover::before
+    bottom: -8px
+    left: -8px
+  &:hover::after
+    opacity: 0
+.heroProfileImg
+  width: 100%
+  height: 100%
+.block
+  font-size: 18px
+  color: $cBlock
+.button
+  @apply py-3 px-6
+  font-family: "Montserrat-Alternates-Semibold", "sans-serif"
+  border: 2px solid $cWhite
+  transition: .4s all
+  z-index: 9
+  &:hover
+    background-color: $cWhite
+    color: $cDark
+.pageFlex
+  @apply flex justify-start items-center
+.pageFlexCenter
+  @apply flex justify-center items-center
+.pageText
+  @apply text-center
+.page
+  @apply text-left
+.h2
+  @apply text-5xl
+  font-family: "Montserrat-Alternates-Bold", "sans-serif"
+  line-height: 64px
+.h3
+  @apply text-4xl
+  font-family: "Montserrat-Alternates-Bold", "sans-serif"
+.portfolioGrid
+  @apply mt-16 grid grid-cols-4 gap-12
+.portfolioAction
+  @apply mt-16 flex justify-center
+.techList
+  display: grid
+  grid-template-columns: repeat(2, minmax(140px, 200px))
+  padding: 0px
+  margin: 20px 0px 0px
+  overflow: hidden
+  list-style: none
+  li
+    @apply my-1 pl-6
+    font-size: 18px
+    color: $cBlock
+    position: relative
+    &::before
+      margin-top: 5px
+      content: "▹"
+      position: absolute
+      left: 0px
+      color: $cPrimary
+      line-height: 12px
+      text-align: middle
+
+
+@media (max-width: 1600px)
+
+@media (max-width: 1200px)
+
+@media (max-width: 992px)
+
+@media (max-width: 768px)
+  .container
+    @apply px-6
+  .gridHero
+    @apply grid grid-cols-1 gap-12
+  .heroH2
+    @apply text-4xl
+  .heroProfile
+    @apply row-start-1 justify-start
+  .portfolioGrid
+    @apply mt-6 grid grid-cols-2 gap-6
+@media (max-width: 512px)
+  .portfolioGrid
+    @apply mt-6 grid grid-cols-1 gap-6

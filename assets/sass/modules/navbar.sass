@@ -1,0 +1,75 @@
+@import "../vars.sass"
+
+.container
+  @apply px-24
+.h1
+  @apply text-2xl
+  font-family: "Montserrat-Alternates-Bold", "sans-serif"
+
+.header
+  @apply py-12
+.headerFlex
+  @apply w-full flex justify-between items-center
+.headerHamburger
+  display: none
+.headerNavigation
+  display: block
+.headerNavigationLink
+  @apply inline-block py-3 px-5
+  position: relative
+  font-family: "Montserrat-Alternates-Semibold", "sans-serif"
+  &:before
+    @apply ml-5
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 0
+    height: 2px
+    background-color: $cPrimary
+    transition: .4s all
+  &:hover:before 
+    width: 20px
+  &[active="true"]:before
+    @apply ml-5
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 20px
+    height: 2px
+    background-color: $cPrimary
+    transition: .4s all
+
+@media (max-width: 992px)
+
+@media (max-width: 1200px)
+
+@media (max-width: 768px)
+  .container
+    @apply px-6
+  .h1
+    @apply text-2xl
+    font-family: "Montserrat-Alternates-Bold", "sans-serif"
+
+  .header
+    @apply py-6
+  .headerFlex
+    @apply w-full flex justify-between items-center
+  .headerHamburger
+    display: block
+  .headerNavigation
+    z-index: 999999
+    opacity: 0
+    position: absolute
+    background-color: $cDarkOver
+    border: 2px solid $cWhite
+    top: 80px
+    right: 1.5rem
+    width: 200px
+    padding: 10px
+    transition: .4s all
+  .headerHamburger:focus + .headerNavigation
+    opacity: 1
+  .headerNavigationLink
+    @apply block py-3 px-5
