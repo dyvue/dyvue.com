@@ -5,7 +5,7 @@
         <div :class="$style.heroText">
           <h2 :class="$style.heroH2"><span :class="[$style.heroH2, $style.textPrimary]">Hello, I'm Romadhan 👋,</span> <br>I'm fullstack web developer.</h2>
           <br>
-          <p :class="$style.block">I'm a Junior Programmer for Canarium in Jakarta. I have serious passion for frontend developer, dynamic user experiences, sometimes devops engineering. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Lets make something special.</a></p>
+          <p :class="$style.block">I'm a programmer in Jakarta. I have serious passion for frontend developer, dynamic user experiences, sometimes devops engineering. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Lets make something special.</a></p>
           <br><br>
           <a href="mailto:romadhanedy@gmail.com" :class="$style.button">Get In Touch</a>
         </div>
