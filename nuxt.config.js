@@ -12,7 +12,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Dyvue',
+    title: 'Romadhan Edy | Dyvue',
     htmlAttrs: {
       lang: 'en'
     },
@@ -20,11 +20,10 @@ export default {
       { charset: 'utf-8' },
       { name: "google-site-verification", content: "w2tKgPWu24ur4xsvhTai56PK_2EU4nM5wLk0gy4QAe8" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Hey, I’m Dyvue 👋, I Build web apps for clients' },
-      { property:"og:title", content:"Dyvue"},
-      { property:"og:image", content:"https://romadhanedy.my.id/banner.png"},
-      { property:"og:description", content:"Hey, I’m Dyvue 👋, I Build web apps for clients"},
-      { property:"og:url", content:"https://romadhanedy.my.id"},
+      { hid: 'description', name: 'description', content: `Hello, I'm Romadhan 👋, I'm fullstack web developer.` },
+      { property:"og:title", content:"Romadhan Edy | Dyvue"},
+      { property:"og:description", content:`Hello, I'm Romadhan 👋, I'm fullstack web developer.`},
+      { property:"og:url", content:"https://dyvue.com"},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
