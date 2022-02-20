@@ -5,7 +5,7 @@
         <div :class="$style.heroText">
           <h2 :class="$style.h3">About me 📝</h2>
           <br>
-          <p :class="$style.block">I'm Romadhan Edy. At the moment, I'm currently working at Canarium Tecnology as a <a target="blank" href="https://en.wikipedia.org/wiki/Programmer" :class="$style.textPrimary">programmer</a> and studying in University majoring <a target="blank" href="https://en.wikipedia.org/wiki/Computer_science" :class="$style.textPrimary">Somputer Science</a>. I like to share, whether it's about my experience and skill what i have. I also like to challenge myself to do things that I find difficult to solve in order to change things around for the better. I also like to train my leadership style, socialization ability, and english ability to improve my soft skills.</p>
+          <p :class="$style.block">I'm Romadhan Edy. At the moment, I'm currently working at Canarium Tecnology as a <a target="blank" href="https://en.wikipedia.org/wiki/Programmer" :class="$style.textPrimary">programmer</a> and studying in University majoring <a target="blank" href="https://en.wikipedia.org/wiki/Computer_science" :class="$style.textPrimary">Computer Science</a>. I like to share, whether it's about my experience and skill what i have. I also like to challenge myself to do things that I find difficult to solve in order to change things around for the better. I also like to train my leadership style, socialization ability, and english ability to improve my soft skills.</p>
           <br>
           <p :class="$style.block">Here are a few technologies I've been working with recently:</p>
           <br>
