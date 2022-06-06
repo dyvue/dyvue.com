@@ -10,7 +10,7 @@
         </a>
         <div :class="$style.headerNavigation">
           <nuxt-link to="/" :class="$style.headerNavigationLink" :active="navigationActive('index')">Home</nuxt-link>
-          <nuxt-link to="/about-me" :class="$style.headerNavigationLink" :active="navigationActive('about-me')">About me</nuxt-link>
+          <!-- <nuxt-link to="/about-me" :class="$style.headerNavigationLink" :active="navigationActive('about-me')">About me</nuxt-link> -->
           <nuxt-link to="/portfolio" :class="$style.headerNavigationLink" :active="navigationActive('portfolio')">Portfolio</nuxt-link>
           <nuxt-link to="/blog" :class="$style.headerNavigationLink" :active="navigationActive('blog')">Blog</nuxt-link>
           <nuxt-link to="/contact" :class="$style.headerNavigationLink" :active="navigationActive('contact')">Contact</nuxt-link>

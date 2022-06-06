@@ -1,9 +1,20 @@
 const data = [
   {
-    name: "Education Indonesia (EKONID)",
+    name: "EPR Indonesia",
+    release: "2022 Apr",
+    technologies: ["Laravel"],
+    description: "One-stop-shop platform for all EPR-related information in Indonesia",
+    link: "https://epr-indonesia.id/",
+    screenshoot: "epr-indonesia.jpg",
+    category: {
+      name: "Web Application"
+    }
+  },
+  {
+    name: "Education Indonesia",
     release: "2021 Jul",
     technologies: ["Laravel"],
-    description: "Education Indonesia is a brand of German-Indonesian Chamber of Industry and Commerce (EKONID)",
+    description: "Education Indonesia is a brand of German-Indonesian Chamber of Industry and Commerce",
     link: "https://education-indonesia.org/",
     screenshoot: "education-indonesia.jpg",
     category: {
