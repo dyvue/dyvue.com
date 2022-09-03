@@ -3,9 +3,9 @@
     <div :class="$style.container">
       <div :class="$style.gridHero">
         <div :class="$style.heroText">
-          <h2 :class="$style.heroH2"><span :class="[$style.heroH2, $style.textPrimary]">Hello, I'm Romadhan 👋,</span> <br>I'm fullstack web developer.</h2>
+          <h2 :class="$style.heroH2"><span :class="[$style.heroH2, $style.textPrimary]">Hello, I'm Romadhan 👋</span> <br>An experience programmer.</h2>
           <br>
-          <p :class="$style.block">I'm a programmer in Jakarta. I have serious passion for frontend developer, dynamic user experiences, sometimes devops engineering. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Lets make something special.</a></p>
+          <p :class="$style.block">I have serious passion for frontend website or mobile developer, dynamic user experiences, sometimes devops engineering to. I really like coding with a level of neatness that is detailed and interesting, of course with maximum working speed. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Lets make something special.</a></p>
           <br><br>
           <a href="mailto:romadhanedy@gmail.com" :class="$style.button">Get In Touch</a>
         </div>

@@ -1,5 +1,27 @@
 const data = [
   {
+    name: "soon 👀",
+    release: "2023 Jan",
+    technologies: ["Laravel"],
+    description: "",
+    link: null,
+    screenshoot: "soon.jpg",
+    category: {
+      name: "x"
+    }
+  },
+  {
+    name: "Business Indonesia",
+    release: "2022 Jul",
+    technologies: ["Laravel"],
+    description: "Business-Indonesia’s purpose is to ​promote business in and with Indonesia, by providing information, connecting companies and developing partnerships.",
+    link: "https:/business-indonesia.org/",
+    screenshoot: "business-indonesia.jpg",
+    category: {
+      name: "Maintenance Web Application"
+    }
+  },
+  {
     name: "EPR Indonesia",
     release: "2022 Apr",
     technologies: ["Laravel"],
@@ -37,7 +59,7 @@ const data = [
     release: "2021 Jun",
     technologies: ["Nuxtjs", "Nodejs", "Go", "AWS"],
     description: "Hospital risk management applications with good architecture.",
-    link: "#",
+    link: null,
     screenshoot: "risk-management-hermina.jpg",
     category: {
       name: "Web Application"
@@ -149,7 +171,7 @@ const data = [
     release: "2019 Mar",
     technologies: ["PHP", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Disposisi",
-    link: "https://github.com/dyvue/disposisi",
+    link: "https://github.com/dyvue/bnpb-disposisi",
     screenshoot: "disposisi.jpg",
     category: {
       name: "Web Application"
@@ -161,7 +183,7 @@ const data = [
     release: "2019 Feb",
     technologies: ["Laravel", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Pendataan Bantuan BPBD",
-    link: "https://github.com/dyvue/bantuan-bpbd",
+    link: "https://github.com/dyvue/bnpb-bantuan-bpbd",
     screenshoot: "bantuan-bpbd.jpg",
     category: {
       name: "Web Application"
@@ -172,7 +194,7 @@ const data = [
     release: "2019 Jan",
     technologies: ["Laravel", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Realiasasi Anggaran",
-    link: "https://github.com/dyvue/realisasi-anggaran",
+    link: "https://github.com/dyvue/bnpb-realisasi-anggaran",
     screenshoot: "realisasi-anggaran.jpg",
     category: {
       name: "Web Application"
