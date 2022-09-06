@@ -7,7 +7,7 @@ const data = [
     link: null,
     screenshoot: "soon.jpg",
     category: {
-      name: "x"
+      name: "?"
     }
   },
   {
