@@ -15,7 +15,7 @@ const data = [
     release: "2022 Jul",
     technologies: ["Laravel"],
     description: "Business-Indonesia’s purpose is to ​promote business in and with Indonesia, by providing information, connecting companies and developing partnerships.",
-    link: "https:/business-indonesia.org/",
+    link: null,
     screenshoot: "business-indonesia.jpg",
     category: {
       name: "Maintenance Web Application"
@@ -26,7 +26,7 @@ const data = [
     release: "2022 Apr",
     technologies: ["Laravel"],
     description: "One-stop-shop platform for all EPR-related information in Indonesia",
-    link: "https://epr-indonesia.id/",
+    link: null,
     screenshoot: "epr-indonesia.jpg",
     category: {
       name: "Web Application"
@@ -37,7 +37,7 @@ const data = [
     release: "2021 Jul",
     technologies: ["Laravel"],
     description: "Education Indonesia is a brand of German-Indonesian Chamber of Industry and Commerce",
-    link: "https://education-indonesia.org/",
+    link: null,
     screenshoot: "education-indonesia.jpg",
     category: {
       name: "Web Application"
