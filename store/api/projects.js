@@ -1,13 +1,13 @@
 const data = [
   {
-    name: "soon 👀",
+    name: "metalogika",
     release: "2023 Jan",
     technologies: ["Laravel"],
     description: "",
     link: null,
-    screenshoot: "soon.jpg",
+    screenshoot: "metalogika.jpg",
     category: {
-      name: "?"
+      name: "Company Profile"
     }
   },
   {

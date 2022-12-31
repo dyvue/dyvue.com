@@ -1,16 +1,19 @@
 @import "../vars.sass"
 
-.container
-  @apply w-full px-24
+.screens
+  @apply container mx-auto w-full px-24
 .footer
   @apply mt-32 py-6 flex justify-between items-center
-.flexBetween
+.socialGrid
   @apply w-full flex justify-between items-center
 .block
   font-size: 14px
   color: $cBlock
 .social
   @apply flex gap-4
+.copyright
+  @apply mt-12 py-4 text-right
+  border-top: 1px solid $cBlock
 
 
 @media (max-width: 992px)
@@ -18,5 +21,5 @@
 @media (max-width: 1200px)
 
 @media (max-width: 768px)
-  .container
+  .screens
     @apply px-6

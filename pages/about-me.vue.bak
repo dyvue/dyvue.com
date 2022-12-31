@@ -1,6 +1,6 @@
 <template>
   <div class="__p_index">
-    <div :class="$style.container">
+    <div :class="$style.screens">
       <div :class="$style.gridHero">
         <div :class="$style.heroText">
           <h2 :class="$style.h3">About me 📝</h2>

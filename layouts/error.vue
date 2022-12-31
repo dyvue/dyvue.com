@@ -1,6 +1,6 @@
 <template>
   <div class="__p_index">
-    <div :class="$style.container">
+    <div :class="$style.screens">
       <div :class="$style.pageFlexCenter">
         <div v-if="error.statusCode === 404" :class="$style.pageText">
           <h2 :class="$style.h2">451 – Unavailable For Legal Reasons</h2>

@@ -6,17 +6,6 @@
         fpsLimit: 240,
         interactivity: {
           detectsOn: 'canvas',
-          // events: {
-          //   onClick: {
-          //     enable: true,
-          //     mode: 'push'
-          //   },
-          //   onHover: {
-          //     enable: true,
-          //     mode: 'repulse'
-          //   },
-          //   resize: true
-          // },
           modes: {
             bubble: {
               distance: 400,
@@ -25,7 +14,7 @@
               size: 40
             },
             push: {
-              quantity: 4
+              quantity: 1
             },
             repulse: {
               distance: 200,
@@ -60,7 +49,7 @@
               enable: true,
               value_area: 800
             },
-            value: 50
+            value: 20
           },
           opacity: {
             value: 1
@@ -79,9 +68,6 @@
     <c-navbar />
     <nuxt />
     <c-footer />
-    <div class="kingsman">
-      <div></div>
-    </div>
   </div>
 </template>
 
@@ -95,24 +81,26 @@ export default {
   },
   data() {
     return {
-      app_class: this.uint(32)
+      app_class: this.generateApp(32)
     };
   },
   methods: {
-    uint: function(base) {
-      let r = "__0x";
-      for (let i = 0; i < base; i++) {
-        r += "0";
-      }
+    generateApp: function(base) {
+      let r = "__0x" + this.makeid(base);
       console.log(
         "%c " + r + " ",
         "text-shadow: 0 0 10px #00dc82,0 0 20px #00dc82,0 0 30px #00dc82,0 0 40px #092420,0 0 70px #092420,0 0 80px #092420,0 0 100px #092420,0 0 150px #092420;padding:20px 0;font-size:16px;"
       );
-      console.log(
-        "%c whatcha doing here dude?",
-        "text-shadow: 0 0 10px #00dc82,0 0 20px #00dc82,0 0 30px #00dc82,0 0 40px #092420,0 0 70px #092420,0 0 80px #092420,0 0 100px #092420,0 0 150px #092420;padding:20px 0;font-size:16px;"
-      );
       return r;
+    },
+    makeid: function(length) {
+      var result           = '';
+      var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for ( var i = 0; i < length; i++ ) {
+          result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
     }
   }
 };

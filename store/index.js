@@ -1,5 +1,5 @@
-import portfolios from './api/portfolio'
+import projects from './api/projects'
 
 export const state = () => ({
-    portfolios
+    projects
 })

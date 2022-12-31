@@ -12,7 +12,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Romadhan Edy | Dyvue',
+    title: 'Dyvue',
     htmlAttrs: {
       lang: 'en'
     },
@@ -53,6 +53,21 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
+
+  tailwindcss: {
+    theme: {
+      container: {
+        center: true,
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1280px',
+        }
+      }
+    }
+  },
 
 
   // Google Analytics: setup

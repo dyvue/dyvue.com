@@ -1,7 +1,7 @@
 @import "../vars.sass"
 
-.container
-  @apply px-24
+.screens
+  @apply container mx-auto px-24
 .textPrimary
   font-size: 18px
   color: $cPrimary
@@ -9,7 +9,7 @@
   @apply grid grid-cols-2 gap-6
 .heroH2
   @apply text-5xl
-  font-family: "Montserrat-Alternates-Bold", "sans-serif"
+  font-family: "__0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
   line-height: 64px
 .heroProfile
   @apply flex justify-end items-center
@@ -51,7 +51,7 @@
   color: $cBlock
 .button
   @apply py-3 px-6
-  font-family: "Montserrat-Alternates-Semibold", "sans-serif"
+  font-family: "__0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
   border: 2px solid $cWhite
   transition: .4s all
   z-index: 9
@@ -66,16 +66,18 @@
   @apply text-center
 .page
   @apply text-left
+.h1
+  @apply text-6xl
 .h2
   @apply text-5xl
-  font-family: "Montserrat-Alternates-Bold", "sans-serif"
+  font-family: "__0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
   line-height: 64px
 .h3
   @apply text-4xl
-  font-family: "Montserrat-Alternates-Bold", "sans-serif"
-.portfolioGrid
+  font-family: "__0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
+.projectGrid
   @apply mt-16 grid grid-cols-4 gap-12
-.portfolioAction
+.projectAction
   @apply mt-16 flex justify-center
 .techList
   display: grid
@@ -106,7 +108,7 @@
 @media (max-width: 992px)
 
 @media (max-width: 768px)
-  .container
+  .screens
     @apply px-6
   .gridHero
     @apply grid grid-cols-1 gap-12
@@ -114,8 +116,8 @@
     @apply text-4xl
   .heroProfile
     @apply row-start-1 justify-start
-  .portfolioGrid
+  .projectGrid
     @apply mt-6 grid grid-cols-2 gap-6
 @media (max-width: 512px)
-  .portfolioGrid
+  .projectGrid
     @apply mt-6 grid grid-cols-1 gap-6

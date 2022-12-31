@@ -1,15 +1,15 @@
 <template>
   <div class="__p_index">
-    <div :class="$style.container">
+    <div :class="$style.screens">
       <div :class="$style.pageFlex">
         <div :class="$style.page">
           <h2 :class="$style.h3">Some Things I’ve Built 🚧</h2>
           <br>
           <p :class="$style.block">these are all the projects I've worked on and some have been awarded awards 🏆.</p>
           <br><br>
-          <div :class="$style.portfolioGrid">
+          <div :class="$style.projectGrid">
             <c-card
-              v-for="(item, index) in portfolios"
+              v-for="(item, index) in projects"
               :key="index"
               :technologies="item.technologies"
               :screenshoot="require(`@/assets/img/projects/${item.screenshoot}`)"
@@ -19,9 +19,9 @@
               :link="item.link"
             />
           </div>
-          <div :class="$style.portfolioAction">
-            <a href="javascript:void(0)" :class="$style.button" @click="viewPortfolioStatus()">
-              <template v-if="!portfolioViewStatus">View more</template>
+          <div :class="$style.projectAction">
+            <a href="javascript:void(0)" :class="$style.button" @click="viewProjectStatus()">
+              <template v-if="!projectViewStatus">View more</template>
               <template v-else>View less</template>
             </a>
           </div>
@@ -35,45 +35,45 @@
 import Card from "@/components/basics/card"
 export default {
   head: {
-    title: 'Portfolio - Dyvue',
+    title: 'Project - Dyvue',
   },
   components: {
     "c-card": Card
   },
   data() {
     return {
-      portfolios: [],
-      portfoliosStore: [],
-      portfolioViewStatus: false
+      projects: [],
+      projectsStore: [],
+      projectViewStatus: false
     };
   },
   mounted() {
     this.$ga.page({
-      page: '/portfolio',
-      title: 'Portfolio',
+      page: '/project',
+      title: 'Project',
       location: window.location.href
     })
-    this.getPortfolio();
+    this.getProject();
   },
   methods: {
-    async getPortfolio() {
+    async getProject() {
       try {
-        const portfolioStore = this.$store.state.portfolios;
+        const projectStore = this.$store.state.projects;
 
-        this.portfolios = portfolioStore.slice(0, 8);
-        this.portfoliosStore = portfolioStore;
+        this.projects = projectStore.slice(0, 8);
+        this.projectsStore = projectStore;
       } catch (err) {
-        this.portfolios = [];
+        this.projects = [];
         console.error(err);
       }
     },
-    viewPortfolioStatus() {
-      if (this.portfolioViewStatus) {
-        this.portfolioViewStatus = false;
-        this.portfolios = this.portfoliosStore.slice(0, 8);
+    viewProjectStatus() {
+      if (this.projectViewStatus) {
+        this.projectViewStatus = false;
+        this.projects = this.projectsStore.slice(0, 8);
       } else {
-        this.portfolioViewStatus = true;
-        this.portfolios = this.portfoliosStore;
+        this.projectViewStatus = true;
+        this.projects = this.projectsStore;
       }
     }
   }
