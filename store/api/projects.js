@@ -1,5 +1,16 @@
 const data = [
   {
+    name: "Cuwit",
+    release: "2023 Jan",
+    technologies: ["Flutter"],
+    description: "",
+    link: "https://github.com/dyvue/cuwit",
+    screenshoot: "cuwit.jpg",
+    category: {
+      name: "Opensource Social Media"
+    }
+  },
+  {
     name: "metalogika",
     release: "2023 Jan",
     technologies: ["Laravel"],

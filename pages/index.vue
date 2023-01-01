@@ -7,7 +7,7 @@
           <br>
           <p :class="$style.block">I have serious passion for web and mobile engineering, dynamic user experiences, sometimes devops engineering to. I really like coding with a level of neatness that is detailed and interesting, of course with maximum working speed. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Lets make something special with me.</a></p>
           <br><br>
-          <a href="mailto:romadhanedy@gmail.com" :class="$style.button">Get In Touch</a>
+          <nuxt-link to="/contact" :class="$style.button">Get in Touch</nuxt-link>
         </div>
         <div :class="$style.heroProfile">
           <div :class="$style.heroProfileImgWrap">

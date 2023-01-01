@@ -9,7 +9,7 @@
           <i class="icon icon-menu w-6 h-6 vertical-middle mt-1"></i>
         </a>
         <div :class="$style.headerNavigation">
-          <nuxt-link to="/" :class="$style.headerNavigationLink" :active="navigationActive('/')">Home</nuxt-link>
+          <!-- <nuxt-link to="/" :class="$style.headerNavigationLink" :active="navigationActive('/')">Home</nuxt-link> -->
           <nuxt-link to="/projects" :class="$style.headerNavigationLink" :active="navigationActive('projects')">Projects</nuxt-link>
           <nuxt-link to="/blog" :class="$style.headerNavigationLink" :active="navigationActive('blog')">Blog</nuxt-link>
           <nuxt-link to="/contact" :class="$style.headerNavigationLink" :active="navigationActive('contact')">Contact</nuxt-link>
