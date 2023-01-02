@@ -3,7 +3,7 @@
     <div :class="$style.screens">
       <div :class="$style.gridHero">
         <div :class="$style.heroText">
-          <h2 :class="$style.heroH2"><span :class="[$style.heroH2, $style.textPrimary]">Hi, Romadhan's here 👋</span> <br>A software engineer who loves web engineering.</h2>
+          <h2 :class="$style.heroH2"><span :class="[$style.heroH2, $style.textPrimary]">Hey, I am Romadhan👋</span> <br>A software developer.</h2>
           <br>
           <p :class="$style.block">I have serious passion for web and mobile engineering, dynamic user experiences, sometimes devops engineering to. I really like coding with a level of neatness that is detailed and interesting, of course with maximum working speed. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Lets make something special with me.</a></p>
           <br><br>

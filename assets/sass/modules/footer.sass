@@ -3,17 +3,24 @@
 .screens
   @apply container mx-auto w-full px-24
 .footer
-  @apply mt-32 py-6 flex justify-between items-center
+  @apply mt-16 md:mt-32 lg:mt-32 py-6 flex justify-between items-center
 .socialGrid
   @apply w-full flex justify-between items-center
+.textWhite
+  color: $cWhite
 .block
   font-size: 14px
   color: $cBlock
+  @apply truncate
 .social
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8
+.socialItem
   @apply flex gap-4
 .copyright
   @apply mt-12 py-4 text-right
   border-top: 1px solid $cBlock
+.hidden
+  display: none
 
 
 @media (max-width: 992px)
