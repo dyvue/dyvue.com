@@ -68,16 +68,19 @@
     <c-navbar />
     <nuxt />
     <c-footer />
+    <mobile-navbar v-if="isMobile()" />
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/layouts/navbar";
 import Footer from "@/components/layouts/footer";
+import MobileNavbar from "@/components/layouts/mobile-navbar";
 export default {
   components: {
     "c-navbar": Navbar,
-    "c-footer": Footer
+    "c-footer": Footer,
+    "mobile-navbar": MobileNavbar,
   },
   data() {
     return {
@@ -101,7 +104,14 @@ export default {
           result += characters.charAt(Math.floor(Math.random() * charactersLength));
       }
       return result;
-    }
+    },
+    isMobile() {
+      if (screen.width <= 760) {
+        return true;
+      } else {
+        return false;
+      }
+    },
   }
 };
 </script>

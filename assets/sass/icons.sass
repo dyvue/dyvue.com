@@ -18,3 +18,42 @@
     background-image: url(../icons/instagram.svg)
   &-bitcoin
     background-image: url(../icons/bitcoin.svg)
+
+.icon-nav
+  background-position: 50%
+  background-size: contain
+  display: inline-block
+  background-repeat: no-repeat
+  margin-top: -30px
+  &-home
+    -webkit-mask-image: url(../icons/home.svg)
+    mask-image: url(../icons/home.svg)
+    -webkit-mask-size: cover
+    mask-size: cover
+    background-color: grey
+  &-project
+    -webkit-mask-image: url(../icons/project.svg)
+    mask-image: url(../icons/project.svg)
+    -webkit-mask-size: cover
+    mask-size: cover
+    background-color: grey
+  &-blog
+    -webkit-mask-image: url(../icons/blog.svg)
+    mask-image: url(../icons/blog.svg)
+    -webkit-mask-size: cover
+    mask-size: cover
+    background-color: grey
+  &-contact
+    -webkit-mask-image: url(../icons/contact.svg)
+    mask-image: url(../icons/contact.svg)
+    -webkit-mask-size: cover
+    mask-size: cover
+    background-color: grey
+
+.nuxt-link-exact-active
+  span
+    color: #00dc82
+
+.nuxt-link-exact-active
+  .icon-nav
+    background-color: #00dc82
