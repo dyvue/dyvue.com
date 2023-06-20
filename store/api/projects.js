@@ -1,5 +1,16 @@
 const data = [
   {
+    name: "Cek Hoax",
+    release: "2023 Jun",
+    technologies: ["Vuejs"],
+    description: "Frontend developer",
+    link: "https://cekhoax.id",
+    screenshoot: "cek-hoax.jpg",
+    category: {
+      name: "Web Application"
+    }
+  },
+  {
     name: "Cuwit",
     release: "2023 Jan",
     technologies: ["Flutter"],
