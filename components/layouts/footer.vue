@@ -55,7 +55,7 @@
         </div>
       </div>
       <div :class="$style.copyright">
-        <p :class="$style.block">Copyright © 2023 Romadhan Edy, Released under the MIT license</p>
+        <p :class="$style.block">© 2021 - PRESENT @ RAMADHAN</p>
       </div>
     </div>
   </footer>
