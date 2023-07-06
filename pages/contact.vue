@@ -3,11 +3,11 @@
     <div :class="$style.screens">
       <div :class="$style.pageFlex">
         <div :class="$style.page">
-          <h2 :class="$style.h3">Get in Touch 👋</h2>
+          <h2 :class="$style.h3">Reach Out and Connect 👋</h2>
           <br>
-          <p :class="$style.block">Although I'm currently not looking for any new opportunities, my inbox is always open. <br>Whether you have a question or just want to say hi, I'll try my best to get back to you! 📩</p>
+          <p :class="$style.block">Although I'm currently not looking for any new opportunities, my inbox is always open. <br>Whether you have a question or just want to say hi, I'll be delighted to hear from you! <br>Feel free to reach out, and I'll make every effort to respond promptly. 📩</p>
           <br><br>
-          <button :class="$style.button" @click="zohoFormView = !zohoFormView">Say Hello</button>
+          <button :class="$style.button" @click="zohoFormView = !zohoFormView">Say hello</button>
           <br><br><br>
           <iframe v-if="zohoFormView" frameborder="0" style="height:765px;width:103%;border:none;" src='https://forms.zohopublic.com/romadhanep/form/Contact/formperma/267TCG57AQjmz8GT4nFR5sXyZexW7ANjhtEmN9os1Nw'></iframe>
         </div>

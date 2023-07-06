@@ -3,9 +3,9 @@
     <div :class="$style.screens">
       <div :class="$style.pageFlex">
         <div :class="$style.page">
-          <h2 :class="$style.h3">Some Things I’ve Built 🚧</h2>
+          <h2 :class="$style.h3">Where Ideas Come Alive ✨</h2>
           <br>
-          <p :class="$style.block">these are all the projects I've worked on and some have been awarded awards 🏆.</p>
+          <p :class="$style.block">Explore my portfolio of award-winning projects and witness the culmination of my passion and expertise. 🏆</p>
           <br><br>
           <div :class="$style.projectGrid">
             <c-card

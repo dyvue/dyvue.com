@@ -5,11 +5,11 @@
         <div :class="$style.pageText">
           <span :class="$style.h1">✏️</span>
           <br><br>
-          <h2 :class="$style.h3">Blog is coming soon</h2>
+          <h2 :class="$style.h3">Stay tuned for captivating insights and expert knowledge</h2>
           <br>
-          <p :class="$style.block">Hi there 👋, this blog will soon be filled, in the meantime, you can checkout my Twitter 🐦.</p>
+          <p :class="$style.block">This blog will soon be filled, in the meantime, you can checkout my twitter 🐦.</p>
           <br><br>
-          <a href="/" :class="$style.button">Home Page</a>
+          <a href="/" :class="$style.button">Home page</a>
         </div>
       </div>
     </div>

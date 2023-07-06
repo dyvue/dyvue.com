@@ -1,13 +1,24 @@
 const data = [
   {
     name: "Cek Hoax",
-    release: "2023 Jun",
+    release: "2023 Jul",
     technologies: ["Vuejs"],
     description: "Frontend developer",
     link: "https://cekhoax.id",
     screenshoot: "cek-hoax.jpg",
     category: {
-      name: "Web Application"
+      name: "Vue PWA (Progresive Web Application)"
+    }
+  },
+  {
+    name: "Mangan",
+    release: "2023 Jun",
+    technologies: ["Vuejs"],
+    description: "Laravel developer",
+    link: "https://github.com/dyvue/wp2_mangan",
+    screenshoot: "mangan.jpg",
+    category: {
+      name: "Codeigniter 4 Web Application"
     }
   },
   {
@@ -18,18 +29,18 @@ const data = [
     link: "https://github.com/dyvue/cuwit",
     screenshoot: "cuwit.jpg",
     category: {
-      name: "Opensource Social Media"
+      name: "Flutter Opensource Social Media"
     }
   },
   {
-    name: "metalogika",
+    name: "metalogika.de",
     release: "2023 Jan",
     technologies: ["Laravel"],
     description: "",
     link: null,
     screenshoot: "metalogika.jpg",
     category: {
-      name: "Company Profile"
+      name: "Laravel Company Profile"
     }
   },
   {
@@ -40,7 +51,7 @@ const data = [
     link: null,
     screenshoot: "business-indonesia.jpg",
     category: {
-      name: "Maintenance Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -51,7 +62,7 @@ const data = [
     link: null,
     screenshoot: "epr-indonesia.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -62,7 +73,7 @@ const data = [
     link: null,
     screenshoot: "education-indonesia.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -73,7 +84,7 @@ const data = [
     link: "https://www.uangkerja.id",
     screenshoot: "uang-kerja.png",
     category: {
-      name: "Web Application"
+      name: "Vue PWA (Progresive Web Application)"
     }
   },
   {
@@ -84,7 +95,7 @@ const data = [
     link: null,
     screenshoot: "risk-management-hermina.jpg",
     category: {
-      name: "Web Application"
+      name: "Nuxt PWA (Progresive Web Application), Go, Node.js"
     }
   },
   {
@@ -95,7 +106,7 @@ const data = [
     link: "https://github.com/dyvue/vicare",
     screenshoot: "vicare.jpg",
     category: {
-      name: "Web Template"
+      name: "HTML Web Template"
     }
   },
   {
@@ -106,7 +117,7 @@ const data = [
     link: "https://indohp.org",
     screenshoot: "indohp-rekber.png",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -117,7 +128,7 @@ const data = [
     link: "https://katalog.indohp.co.id",
     screenshoot: "product-catalog.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -129,7 +140,7 @@ const data = [
     link: "https://github.com/dyvue/romadhanedy.my.id/blob/main/assets/video/nabila.mp4?raw=true",
     screenshoot: "nabila.png",
     category: {
-      name: "Voice Assistant"
+      name: "Vanilla Javascript Voice Assistant, Integrated with raspberrypi"
     }
   },
   {
@@ -163,7 +174,7 @@ const data = [
     link: "https://github.com/dyvue/dyresto",
     screenshoot: "dyresto.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -174,7 +185,7 @@ const data = [
     link: "https://dygoo.netlify.app",
     screenshoot: "dygoo.jpg",
     category: {
-      name: "Web Application"
+      name: "Nuxt PWA (Progresive Web Application), chat app using redis"
     }
   },
   {
@@ -185,7 +196,7 @@ const data = [
     link: "https://github.com/dyvue/dyposten",
     screenshoot: "dyposten.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -196,7 +207,7 @@ const data = [
     link: "https://github.com/dyvue/bnpb-disposisi",
     screenshoot: "disposisi.jpg",
     category: {
-      name: "Web Application"
+      name: "PHP Native Web Application"
     }
   },
   {
@@ -208,7 +219,7 @@ const data = [
     link: "https://github.com/dyvue/bnpb-bantuan-bpbd",
     screenshoot: "bantuan-bpbd.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -219,7 +230,7 @@ const data = [
     link: "https://github.com/dyvue/bnpb-realisasi-anggaran",
     screenshoot: "realisasi-anggaran.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -231,7 +242,7 @@ const data = [
     link: null,
     screenshoot: "vista-sastra.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -242,7 +253,7 @@ const data = [
     link: null,
     screenshoot: "netrans.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -253,7 +264,7 @@ const data = [
     link: "https://gitlab.com/dyvue/indohptaskreport",
     screenshoot: "indohp-taskreport.jpg",
     category: {
-      name: "Web Application"
+      name: "Laravel Web Application"
     }
   },
   {
@@ -264,7 +275,7 @@ const data = [
     link: null,
     screenshoot: "digitoys.jpg",
     category: {
-      name: "Backend API"
+      name: "Lumen Backend API"
     }
   }
 ]

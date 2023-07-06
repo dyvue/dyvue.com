@@ -3,11 +3,12 @@
     <div :class="$style.screens">
       <div :class="$style.gridHero">
         <div :class="$style.heroText">
-          <h2 :class="$style.heroH2"><span :class="[$style.heroH2, $style.textPrimary]">Hey, I am Romadhan👋</span> <br>A software developer.</h2>
+          <h2 :class="$style.heroH2"><span :class="[$style.heroH2, $style.textPrimary]">Hey, I am Ramadhan👋</span> <br>A software developer.</h2>
           <br>
-          <p :class="$style.block">I have serious passion for web and mobile engineering, dynamic user experiences, sometimes devops engineering to. I really like coding with a level of neatness that is detailed and interesting, of course with maximum working speed. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Lets make something special with me.</a></p>
+          <p :class="$style.block">Welcome to my personal website! <br><br>I am deeply passionate about web and mobile engineering, creating dynamic user experiences, and occasionally dabbling in devops engineering. I find joy in coding with meticulous attention to detail, crafting clean and fascinating solutions, all while maintaining maximum efficiency. <a href="mailto:romadhanedy@gmail.com" :class="$style.textPrimary">Join me on this journey as we create something truly exceptional together.</a></p>
           <br><br>
-          <nuxt-link to="/contact" :class="$style.button">Get in Touch</nuxt-link>
+          <!-- <a href="mailto:romadhanedy@gmail.com" :class="$style.button">Get in Touch</a> -->
+          <nuxt-link to="/projects" :class="$style.button">Projects</nuxt-link>
         </div>
         <div :class="$style.heroProfile">
           <div :class="$style.heroProfileImgWrap">
