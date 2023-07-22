@@ -1,7 +1,7 @@
 <template>
   <div :class="app_class">
     <particles
-      id="__tsparticles"
+      id="_tsparticles"
       :options="{
         fpsLimit: 240,
         interactivity: {
@@ -89,7 +89,7 @@ export default {
   },
   methods: {
     generateApp: function(base) {
-      let r = "__0x" + this.makeid(base);
+      let r = "0x" + this.makeid(base);
       console.log(
         "%c " + r + " ",
         "text-shadow: 0 0 10px #00dc82,0 0 20px #00dc82,0 0 30px #00dc82,0 0 40px #092420,0 0 70px #092420,0 0 80px #092420,0 0 100px #092420,0 0 150px #092420;padding:20px 0;font-size:16px;"

@@ -1,5 +1,5 @@
 <template>
-  <div class="__p_index">
+  <div class="_p_index">
     <div :class="$style.screens">
       <div :class="$style.pageFlex">
         <div :class="$style.page">
@@ -7,7 +7,7 @@
           <br>
           <p :class="$style.block">Although I'm currently not looking for any new opportunities, my inbox is always open. <br>Whether you have a question or just want to say hi, I'll be delighted to hear from you! <br>Feel free to reach out, and I'll make every effort to respond promptly. 📩</p>
           <br><br>
-          <button :class="$style.button" @click="zohoFormView = !zohoFormView">Say hello</button>
+          <a href="mailto:romadhanedy@gmail.com" :class="$style.button">Say hello</a>
           <br><br><br>
           <iframe v-if="zohoFormView" frameborder="0" style="height:765px;width:103%;border:none;" src='https://forms.zohopublic.com/romadhanep/form/Contact/formperma/267TCG57AQjmz8GT4nFR5sXyZexW7ANjhtEmN9os1Nw'></iframe>
         </div>

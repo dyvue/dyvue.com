@@ -3,13 +3,16 @@
 .screens
   @apply container mx-auto px-24
 .h1
-  @apply text-2xl
-  font-family: "__0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
+  @apply text-2xl flex items-center gap-6
+  font-family: "_0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
 
 .header
   @apply py-12
 .headerFlex
   @apply w-full flex justify-between items-center
+.headerLogo
+  @apply w-16
+  animation: rotation 2s infinite linear
 .headerHamburger
   display: none
 .headerNavigation
@@ -17,7 +20,7 @@
 .headerNavigationLink
   @apply inline-block py-3 px-5
   position: relative
-  font-family: "__0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
+  font-family: "_0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
   &:before
     @apply ml-5
     content: ""
@@ -41,6 +44,12 @@
     background-color: $cPrimary
     transition: .4s all
 
+@keyframes rotation
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
+
 @media (max-width: 992px)
 
 @media (max-width: 1200px)
@@ -50,7 +59,7 @@
     @apply px-6
   .h1
     @apply text-2xl
-    font-family: "__0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
+    font-family: "_0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
 
   .header
     @apply py-6

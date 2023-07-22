@@ -1,5 +1,5 @@
 <template>
-  <div class="__p_index">
+  <div class="_p_index">
     <div :class="$style.screens">
       <div :class="$style.gridHero">
         <div :class="$style.heroText">

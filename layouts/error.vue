@@ -1,5 +1,5 @@
 <template>
-  <div class="__p_index">
+  <div class="_p_index">
     <div :class="$style.screens">
       <div :class="$style.pageFlexCenter">
         <div v-if="error.statusCode === 404" :class="$style.pageText">

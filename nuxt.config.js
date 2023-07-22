@@ -80,16 +80,16 @@ export default {
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  globalName: "dyvueapp",
+  globalName: "dyvue",
   globals: {
-    id: globalName => `__${globalName}`,
+    id: globalName => `${globalName}`,
   },
   build: {
-    publicPath: "/__0x00000000000000000000000000000000",
+    publicPath: "/0x00000000000000000000000000000000",
     loaders: {
       cssModules: {
         modules: {
-          localIdentName: "__0x[hash:64]"
+          localIdentName: "0x[hash:64]"
         }
       }
     }

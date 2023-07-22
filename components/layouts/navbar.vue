@@ -3,7 +3,9 @@
     <div :class="$style.screens">
       <div :class="$style.headerFlex">
         <a href="/">
-          <h1 :class="$style.h1">Dyvue.</h1>
+          <h1 :class="$style.h1">
+            <img src="@/assets/img/logo.png" alt="DYVUE" :class="$style.headerLogo">
+          </h1>
         </a>
         <a v-if="!isMobile()" href="javascript:void(0)" :class="$style.headerHamburger">
           <i class="icon icon-menu w-6 h-6 vertical-middle mt-1"></i>
