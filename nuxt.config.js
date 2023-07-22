@@ -20,9 +20,9 @@ export default {
       { charset: 'utf-8' },
       { name: "google-site-verification", content: "w2tKgPWu24ur4xsvhTai56PK_2EU4nM5wLk0gy4QAe8" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: `Hello, I'm Romadhan 👋, I'm fullstack web developer.` },
-      { property:"og:title", content:"Romadhan Edy | Dyvue"},
-      { property:"og:description", content:`Hello, I'm Romadhan 👋, I'm fullstack web developer.`},
+      { hid: 'description', name: 'description', content: `Hey, I am Ramadhan 👋 A software developer.` },
+      { property:"og:title", content:"Dyvue"},
+      { property:"og:description", content:`Hey, I am Ramadhan 👋 A software developer.`},
       { property:"og:url", content:"https://dyvue.com"},
     ],
     link: [
@@ -47,7 +47,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -75,6 +76,20 @@ export default {
     id: "UA-195249932-1", // Use as fallback if no runtime config is provided
     autoTracking: {
       screenview: true
+    }
+  },
+
+  // PWA configuration
+  pwa: {
+    manifest: {
+      name: 'Dyvue',
+      lang: 'en',
+      useWebmanifestExtension: false
+    },
+    meta: {
+      name: "Dyvue",
+      description: "Hey, I am Ramadhan 👋 A software developer.",
+      theme_color: "#00dc82",
     }
   },
 
