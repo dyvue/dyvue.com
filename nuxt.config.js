@@ -48,11 +48,11 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/pwa',
   ],
 
   tailwindcss: {
@@ -70,7 +70,6 @@ export default {
     }
   },
 
-
   // Google Analytics: setup
   googleAnalytics: {
     id: "UA-195249932-1", // Use as fallback if no runtime config is provided
@@ -84,12 +83,12 @@ export default {
     manifest: {
       name: 'Dyvue',
       lang: 'en',
-      useWebmanifestExtension: false
+      display: 'standalone',
     },
     meta: {
       name: "Dyvue",
       description: "Hey, I am Ramadhan 👋 A software developer.",
-      theme_color: "#00dc82",
+      theme_color: "#090b0b",
     }
   },
 

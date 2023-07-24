@@ -11,6 +11,14 @@
               romadhanedy@gmail.com
             </p>
           </a>
+          <a target="blank" href="https://www.linkedin.com/in/ramadhanep/" :class="$style.socialItem">
+            <i class="icon icon-linkedin w-10 h-10 vertical-middle"></i>
+            <p :class="$style.block">
+              <span :class="$style.textWhite">Linkedin</span>
+              <br>
+              ramadhanep
+            </p>
+          </a>
           <a target="blank" href="https://github.com/dyvue/" :class="$style.socialItem">
             <i class="icon icon-github w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
@@ -19,14 +27,14 @@
               @dyvue
             </p>
           </a>
-          <a target="blank" href="https://instagram.com/dy.vue" :class="$style.socialItem">
+          <!-- <a target="blank" href="https://instagram.com/dy.vue" :class="$style.socialItem">
             <i class="icon icon-instagram w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Instagram</span>
               <br>
               @dy.vue
             </p>
-          </a>
+          </a> -->
           <a target="blank" href="https://twitter.com/dyvue" :class="$style.socialItem">
             <i class="icon icon-twitter w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
@@ -35,23 +43,31 @@
               @dyvue
             </p>
           </a>
-          <a target="blank" href="https://www.linkedin.com/in/romadhan-prasetyo/" :class="$style.socialItem">
-            <i class="icon icon-linkedin w-10 h-10 vertical-middle"></i>
-            <p :class="$style.block">
-              <span :class="$style.textWhite">Linkedin</span>
-              <br>
-              romadhan-prasetyo
-            </p>
-          </a>
-          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyBitcoinAddr()">
+          <a target="blank" :href="`https://www.blockchain.com/explorer/addresses/btc/${bitcoinAddr}`" :class="$style.socialItem">
             <i class="icon icon-bitcoin w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Bitcoin</span>
               <br>
-              {{ this.fn(bitcoinAddr, 20) }}
-              <input id="bitcoinAddrInput" type="text" :value="bitcoinAddr" :class="$style.hidden">
+              {{ this.fn(bitcoinAddr, 27) }}
             </p>
           </a>
+          <a target="blank" :href="`https://arbiscan.io/address/${arbitrumAddr}#tokentxns`" :class="$style.socialItem">
+            <i class="icon icon-arbitrum w-10 h-10 vertical-middle"></i>
+            <p :class="$style.block">
+              <span :class="$style.textWhite">Arbitrum</span>
+              <br>
+              {{ this.fn(arbitrumAddr, 27) }}
+            </p>
+          </a>
+          <!-- <a href="javascript:void(0)" :class="$style.socialItem" @click="copyBitcoinAddr()">
+            <i class="icon icon-bitcoin w-10 h-10 vertical-middle"></i>
+            <p :class="$style.block">
+              <span :class="$style.textWhite">Bitcoin</span>
+              <br>
+              {{ this.fn(bitcoinAddr, 27) }}
+              <input id="bitcoinAddrInput" type="text" :value="bitcoinAddr" :class="$style.hidden">
+            </p>
+          </a> -->
         </div>
       </div>
       <div :class="$style.copyright">
@@ -65,7 +81,8 @@
 export default {
   data() {
     return {
-      bitcoinAddr: "bc1qpeck86e6ecxphawuzjydxqpe0y2wgqrdjuur8z"
+      bitcoinAddr: "bc1qhpqsurlwx0q280qrzqk0c4xymc3vrjzd0eykd9",
+      arbitrumAddr: "0x8A9A935f0d889202CdDb760C4C7df3eF2e82a0fD",
     }
   },
   methods: {
