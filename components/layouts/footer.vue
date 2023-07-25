@@ -3,12 +3,12 @@
     <div :class="$style.screens">
       <div :class="$style.socialGrid">
         <div :class="$style.social">
-          <a target="blank" href="mailto:romadhanedy@gmail.com" :class="$style.socialItem">
+          <a target="blank" href="mailto:work@dyvue.com" :class="$style.socialItem">
             <i class="icon icon-email w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Email</span>
               <br>
-              romadhanedy@gmail.com
+              work@dyvue.com
             </p>
           </a>
           <a target="blank" href="https://www.linkedin.com/in/ramadhanep/" :class="$style.socialItem">
