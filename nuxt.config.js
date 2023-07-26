@@ -72,7 +72,7 @@ export default {
 
   // Google Analytics: setup
   googleAnalytics: {
-    id: "UA-195249932-1", // Use as fallback if no runtime config is provided
+    id: "385772387", // Use as fallback if no runtime config is provided
     autoTracking: {
       screenview: true
     }
