@@ -52,7 +52,7 @@
               <i>{{ this.fn(bitcoinAddr, 27) }}</i>
             </p>
           </a>
-          <a target="blank" :href="`https://arbiscan.io/address/${arbitrumAddr}#tokentxns`" :class="$style.socialItem">
+          <a target="blank" :href="`https://arbiscan.io/tokenholdings?a=${arbitrumAddr}#tokentxns`" :class="$style.socialItem">
             <i class="icon icon-arbitrum w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Arbitrum</span>
