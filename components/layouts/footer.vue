@@ -43,12 +43,13 @@
               @dyvue
             </p>
           </a>
-          <a target="blank" :href="`https://www.blockchain.com/explorer/addresses/btc/${bitcoinAddr}`" :class="$style.socialItem">
+          <!-- <a target="blank" :href="`https://www.blockchain.com/explorer/addresses/btc/${bitcoinAddr}`" :class="$style.socialItem"> -->
+          <a :href="`javascript:void(0)`" :class="$style.socialItem">
             <i class="icon icon-bitcoin w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Bitcoin</span>
               <br>
-              {{ this.fn(bitcoinAddr, 27) }}
+              <i>{{ this.fn(bitcoinAddr, 27) }}</i>
             </p>
           </a>
           <a target="blank" :href="`https://arbiscan.io/address/${arbitrumAddr}#tokentxns`" :class="$style.socialItem">
@@ -81,7 +82,7 @@
 export default {
   data() {
     return {
-      bitcoinAddr: "bc1qhpqsurlwx0q280qrzqk0c4xymc3vrjzd0eykd9",
+      bitcoinAddr: "waiting for ledger wallet",
       arbitrumAddr: "0x8A9A935f0d889202CdDb760C4C7df3eF2e82a0fD",
     }
   },
