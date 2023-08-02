@@ -11,17 +11,6 @@ const data = [
     }
   },
   {
-    name: "Mangan",
-    release: "2023 Jun",
-    technologies: ["Vuejs"],
-    description: "Laravel developer",
-    link: "https://github.com/dyvue/wp2_mangan",
-    screenshoot: "mangan.jpg",
-    category: {
-      name: "Codeigniter 4 Web Application"
-    }
-  },
-  {
     name: "Cuwit",
     release: "2023 Jan",
     technologies: ["Flutter"],
@@ -77,6 +66,17 @@ const data = [
     }
   },
   {
+    name: "Hermina Risk Management",
+    release: "2021 Jun",
+    technologies: ["Nuxtjs", "Nodejs", "Go", "AWS"],
+    description: "Hospital risk management applications with good architecture.",
+    link: null,
+    screenshoot: "risk-management-hermina.jpg",
+    category: {
+      name: "Nuxt PWA (Progresive Web Application), Go, Node.js"
+    }
+  },
+  {
     name: "Uang Kerja",
     release: "2021 Jul",
     technologies: ["Nuxtjs"],
@@ -88,14 +88,14 @@ const data = [
     }
   },
   {
-    name: "Hermina Risk Management",
-    release: "2021 Jun",
-    technologies: ["Nuxtjs", "Nodejs", "Go", "AWS"],
-    description: "Hospital risk management applications with good architecture.",
-    link: null,
-    screenshoot: "risk-management-hermina.jpg",
+    name: "Mangan",
+    release: "2023 Jun",
+    technologies: ["Vuejs"],
+    description: "Laravel developer",
+    link: "https://github.com/dyvue/wp2_mangan",
+    screenshoot: "mangan.jpg",
     category: {
-      name: "Nuxt PWA (Progresive Web Application), Go, Node.js"
+      name: "Codeigniter 4 Web Application"
     }
   },
   {
