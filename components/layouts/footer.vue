@@ -27,14 +27,6 @@
               @dyvue
             </p>
           </a>
-          <!-- <a target="blank" href="https://instagram.com/dy.vue" :class="$style.socialItem">
-            <i class="icon icon-instagram w-10 h-10 vertical-middle"></i>
-            <p :class="$style.block">
-              <span :class="$style.textWhite">Instagram</span>
-              <br>
-              @dy.vue
-            </p>
-          </a> -->
           <a target="blank" href="https://twitter.com/dyvue" :class="$style.socialItem">
             <i class="icon icon-twitter w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
@@ -43,7 +35,6 @@
               @dyvue
             </p>
           </a>
-          <!-- <a target="blank" :href="`https://www.blockchain.com/explorer/addresses/btc/${bitcoinAddr}`" :class="$style.socialItem"> -->
           <a :href="`javascript:void(0)`" :class="$style.socialItem">
             <i class="icon icon-bitcoin w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
@@ -52,21 +43,31 @@
               <i>{{ this.fn(bitcoinAddr, 27) }}</i>
             </p>
           </a>
-          <!-- <a target="blank" :href="`https://arbiscan.io/tokenholdings?a=${arbitrumAddr}#tokentxns`" :class="$style.socialItem">
-            <i class="icon icon-arbitrum w-10 h-10 vertical-middle"></i>
+          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyERC20Addr()">
+            <i class="icon icon-ethereum w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
-              <span :class="$style.textWhite">Arbitrum</span>
+              <span :class="$style.textWhite">Ether</span>
               <br>
-              {{ this.fn(arbitrumAddr, 27) }}
+              {{ this.fn(erc20Addr, 27) }}
+              <input id="erc20AddrInput" type="text" :value="erc20Addr" :class="$style.hidden">
             </p>
-          </a> -->
-          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyArbitrumAddr()">
+          </a>
+          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyERC20Addr()">
             <i class="icon icon-arbitrum w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
-              <span :class="$style.textWhite">Arbitrum</span>
+              <span :class="$style.textWhite">Arbitrum (ERC20)</span>
               <br>
-              {{ this.fn(arbitrumAddr, 27) }}
-              <input id="arbitrumAddrInput" type="text" :value="arbitrumAddr" :class="$style.hidden">
+              {{ this.fn(erc20Addr, 27) }}
+              <input id="erc20AddrInput" type="text" :value="erc20Addr" :class="$style.hidden">
+            </p>
+          </a>
+          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyERC20Addr()">
+            <i class="icon icon-chainlink w-10 h-10 vertical-middle"></i>
+            <p :class="$style.block">
+              <span :class="$style.textWhite">Chainlink (ERC20)</span>
+              <br>
+              {{ this.fn(erc20Addr, 27) }}
+              <input id="erc20AddrInput" type="text" :value="erc20Addr" :class="$style.hidden">
             </p>
           </a>
         </div>
@@ -83,19 +84,12 @@ export default {
   data() {
     return {
       bitcoinAddr: "address will be filled in",
-      arbitrumAddr: "0x8A9A935f0d889202CdDb760C4C7df3eF2e82a0fD",
+      erc20Addr: "0x8A9A935f0d889202CdDb760C4C7df3eF2e82a0fD",
     }
   },
   methods: {
-    copyBitcoinAddr: async () => {
-      var copyText = document.getElementById("bitcoinAddrInput")
-      copyText.select()
-      copyText.setSelectionRange(0, 99999)
-      navigator.clipboard.writeText(copyText.value)
-      alert("Copied: " + copyText.value)
-    },
-    copyArbitrumAddr: async () => {
-      var copyText = document.getElementById("arbitrumAddrInput")
+    copyERC20Addr: async () => {
+      var copyText = document.getElementById("erc20AddrInput")
       copyText.select()
       copyText.setSelectionRange(0, 99999)
       navigator.clipboard.writeText(copyText.value)
