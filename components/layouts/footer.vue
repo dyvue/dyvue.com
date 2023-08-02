@@ -35,36 +35,19 @@
               @dyvue
             </p>
           </a>
-          <a :href="`javascript:void(0)`" :class="$style.socialItem">
+          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyBtcAddr()">
             <i class="icon icon-bitcoin w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
-              <span :class="$style.textWhite">Bitcoin</span>
+              <span :class="$style.textWhite">Bit</span>
               <br>
-              <i>{{ this.fn(bitcoinAddr, 27) }}</i>
+              {{ this.fn(btcAddr, 27) }}
+              <input id="btcAddrInput" type="text" :value="btcAddr" :class="$style.hidden">
             </p>
           </a>
           <a href="javascript:void(0)" :class="$style.socialItem" @click="copyERC20Addr()">
             <i class="icon icon-ethereum w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Ether</span>
-              <br>
-              {{ this.fn(erc20Addr, 27) }}
-              <input id="erc20AddrInput" type="text" :value="erc20Addr" :class="$style.hidden">
-            </p>
-          </a>
-          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyERC20Addr()">
-            <i class="icon icon-arbitrum w-10 h-10 vertical-middle"></i>
-            <p :class="$style.block">
-              <span :class="$style.textWhite">Arbitrum (ERC20)</span>
-              <br>
-              {{ this.fn(erc20Addr, 27) }}
-              <input id="erc20AddrInput" type="text" :value="erc20Addr" :class="$style.hidden">
-            </p>
-          </a>
-          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyERC20Addr()">
-            <i class="icon icon-chainlink w-10 h-10 vertical-middle"></i>
-            <p :class="$style.block">
-              <span :class="$style.textWhite">Chainlink (ERC20)</span>
               <br>
               {{ this.fn(erc20Addr, 27) }}
               <input id="erc20AddrInput" type="text" :value="erc20Addr" :class="$style.hidden">
@@ -83,11 +66,18 @@
 export default {
   data() {
     return {
-      bitcoinAddr: "address will be filled in",
-      erc20Addr: "0x8A9A935f0d889202CdDb760C4C7df3eF2e82a0fD",
+      btcAddr: "bc1q4xtr0cz3mac0saxg9fdamm3htueax55fzhkddr",
+      erc20Addr: "0x8d7a44F2728B380DD33a86DA51B515AF7f214FF2",
     }
   },
   methods: {
+    copyBtcAddr: async () => {
+      var copyText = document.getElementById("btcAddrInput")
+      copyText.select()
+      copyText.setSelectionRange(0, 99999)
+      navigator.clipboard.writeText(copyText.value)
+      alert("Copied: " + copyText.value)
+    },
     copyERC20Addr: async () => {
       var copyText = document.getElementById("erc20AddrInput")
       copyText.select()
