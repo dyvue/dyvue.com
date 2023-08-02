@@ -52,23 +52,23 @@
               <i>{{ this.fn(bitcoinAddr, 27) }}</i>
             </p>
           </a>
-          <a target="blank" :href="`https://arbiscan.io/tokenholdings?a=${arbitrumAddr}#tokentxns`" :class="$style.socialItem">
+          <!-- <a target="blank" :href="`https://arbiscan.io/tokenholdings?a=${arbitrumAddr}#tokentxns`" :class="$style.socialItem">
             <i class="icon icon-arbitrum w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Arbitrum</span>
               <br>
               {{ this.fn(arbitrumAddr, 27) }}
             </p>
-          </a>
-          <!-- <a href="javascript:void(0)" :class="$style.socialItem" @click="copyBitcoinAddr()">
-            <i class="icon icon-bitcoin w-10 h-10 vertical-middle"></i>
-            <p :class="$style.block">
-              <span :class="$style.textWhite">Bitcoin</span>
-              <br>
-              {{ this.fn(bitcoinAddr, 27) }}
-              <input id="bitcoinAddrInput" type="text" :value="bitcoinAddr" :class="$style.hidden">
-            </p>
           </a> -->
+          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyArbitrumAddr()">
+            <i class="icon icon-arbitrum w-10 h-10 vertical-middle"></i>
+            <p :class="$style.block">
+              <span :class="$style.textWhite">Arbitrum</span>
+              <br>
+              {{ this.fn(arbitrumAddr, 27) }}
+              <input id="arbitrumAddrInput" type="text" :value="arbitrumAddr" :class="$style.hidden">
+            </p>
+          </a>
         </div>
       </div>
       <div :class="$style.copyright">
@@ -82,13 +82,20 @@
 export default {
   data() {
     return {
-      bitcoinAddr: "waiting for ledger wallet",
+      bitcoinAddr: "address will be filled in",
       arbitrumAddr: "0x8A9A935f0d889202CdDb760C4C7df3eF2e82a0fD",
     }
   },
   methods: {
     copyBitcoinAddr: async () => {
       var copyText = document.getElementById("bitcoinAddrInput")
+      copyText.select()
+      copyText.setSelectionRange(0, 99999)
+      navigator.clipboard.writeText(copyText.value)
+      alert("Copied: " + copyText.value)
+    },
+    copyArbitrumAddr: async () => {
+      var copyText = document.getElementById("arbitrumAddrInput")
       copyText.select()
       copyText.setSelectionRange(0, 99999)
       navigator.clipboard.writeText(copyText.value)
