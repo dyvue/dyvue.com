@@ -35,7 +35,7 @@
               @dyvue
             </p>
           </a>
-          <a href="javascript:void(0)" :class="$style.socialItem" @click="copyBtcAddr()">
+          <!-- <a href="javascript:void(0)" :class="$style.socialItem" @click="copyBtcAddr()">
             <i class="icon icon-bitcoin w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Bit</span>
@@ -52,7 +52,7 @@
               {{ this.fn(erc20Addr, 27) }}
               <input id="erc20AddrInput" type="text" :value="erc20Addr" :class="$style.hidden">
             </p>
-          </a>
+          </a> -->
         </div>
       </div>
       <div :class="$style.copyright">
@@ -66,8 +66,8 @@
 export default {
   data() {
     return {
-      btcAddr: "bc1q4xtr0cz3mac0saxg9fdamm3htueax55fzhkddr",
-      erc20Addr: "0x8d7a44F2728B380DD33a86DA51B515AF7f214FF2",
+      btcAddr: "*",
+      erc20Addr: "*",
     }
   },
   methods: {

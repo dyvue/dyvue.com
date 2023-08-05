@@ -233,51 +233,51 @@ const data = [
       name: "Laravel Web Application"
     }
   },
-  {
-    name: "Vista Sastra",
-    release: "2020 Mar",
-    technologies: ["Laravel", "Mysql"],
-    description:
-      "Badan Pengembangan dan Pembinaan Bahasa - Artist Gallery (Literature)",
-    link: null,
-    screenshoot: "vista-sastra.jpg",
-    category: {
-      name: "Laravel Web Application"
-    }
-  },
-  {
-    name: "Netrans",
-    release: "2020 May",
-    technologies: ["Laravel", "Mysql"],
-    description: "Netrans Admin Application",
-    link: null,
-    screenshoot: "netrans.jpg",
-    category: {
-      name: "Laravel Web Application"
-    }
-  },
-  {
-    name: "INDOHP Task Report",
-    release: "2020 Jun",
-    technologies: ["Laravel", "Mysql"],
-    description: "INDOHP Task Report Application",
-    link: "https://gitlab.com/dyvue/indohptaskreport",
-    screenshoot: "indohp-taskreport.jpg",
-    category: {
-      name: "Laravel Web Application"
-    }
-  },
-  {
-    name: "Digitoys API",
-    release: "2020 Aug",
-    technologies: ["Lumen", "Mysql"],
-    description: "Digitoys API",
-    link: null,
-    screenshoot: "digitoys.jpg",
-    category: {
-      name: "Lumen Backend API"
-    }
-  }
+  // {
+  //   name: "Vista Sastra",
+  //   release: "2020 Mar",
+  //   technologies: ["Laravel", "Mysql"],
+  //   description:
+  //     "Badan Pengembangan dan Pembinaan Bahasa - Artist Gallery (Literature)",
+  //   link: null,
+  //   screenshoot: "vista-sastra.jpg",
+  //   category: {
+  //     name: "Laravel Web Application"
+  //   }
+  // },
+  // {
+  //   name: "Netrans",
+  //   release: "2020 May",
+  //   technologies: ["Laravel", "Mysql"],
+  //   description: "Netrans Admin Application",
+  //   link: null,
+  //   screenshoot: "netrans.jpg",
+  //   category: {
+  //     name: "Laravel Web Application"
+  //   }
+  // },
+  // {
+  //   name: "INDOHP Task Report",
+  //   release: "2020 Jun",
+  //   technologies: ["Laravel", "Mysql"],
+  //   description: "INDOHP Task Report Application",
+  //   link: "https://gitlab.com/dyvue/indohptaskreport",
+  //   screenshoot: "indohp-taskreport.jpg",
+  //   category: {
+  //     name: "Laravel Web Application"
+  //   }
+  // },
+  // {
+  //   name: "Digitoys API",
+  //   release: "2020 Aug",
+  //   technologies: ["Lumen", "Mysql"],
+  //   description: "Digitoys API",
+  //   link: null,
+  //   screenshoot: "digitoys.jpg",
+  //   category: {
+  //     name: "Lumen Backend API"
+  //   }
+  // }
 ]
 
 export default data
