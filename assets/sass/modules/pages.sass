@@ -4,7 +4,7 @@
   @apply container mx-auto px-24
 .textPrimary
   font-size: 18px
-  color: $cPrimary
+  color: var(--color-primary)
 .gridHero
   @apply grid grid-cols-2 gap-6
 .heroH2
@@ -17,7 +17,7 @@
   width: 300px
   height: 300px
   position: relative
-  border: 2px solid $cWhite
+  border: 2px solid var(--color-white)
   &::before
     content: ""
     z-index: -2
@@ -26,38 +26,26 @@
     height: 300px
     bottom: -10px
     left: -10px
-    border: 2px solid $cPrimary
-    transition: .4s all
-  &::after
-    content: ""
-    z-index: 1
-    position: absolute
-    width: 300px
-    height: 300px
-    top: 0
-    left: 0
-    background-color: rgba(3, 166, 150, .3)
+    border: 2px solid var(--color-primary)
     transition: .4s all
   &:hover::before
     bottom: -8px
     left: -8px
-  &:hover::after
-    opacity: 0
 .heroProfileImg
   width: 100%
   height: 100%
 .block
   font-size: 18px
-  color: $cBlock
+  color: var(--color-block)
 .button
   @apply py-3 px-6
   font-family: "_0xd24185c488767bff8e7709fd4d2da964", "sans-serif"
-  border: 2px solid $cWhite
+  border: 2px solid var(--color-white)
   transition: .4s all
   z-index: 9
   &:hover
-    background-color: $cWhite
-    color: $cDark
+    background-color: var(--color-white)
+    color: var(--color-dark)
 .pageFlex
   @apply flex justify-start items-center
 .pageFlexCenter
@@ -89,14 +77,14 @@
   li
     @apply my-1 pl-6
     font-size: 18px
-    color: $cBlock
+    color: var(--color-block)
     position: relative
     &::before
       margin-top: 5px
       content: "▹"
       position: absolute
       left: 0px
-      color: $cPrimary
+      color: var(--color-primary)
       line-height: 12px
       text-align: middle
 

@@ -24,10 +24,10 @@
         },
         particles: {
           color: {
-            value: '#00dc82'
+            value: '#9a9a9a'
           },
           links: {
-            color: '#00dc82',
+            color: '#9a9a9a',
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -92,7 +92,7 @@ export default {
       let r = "0x" + this.makeid(base);
       console.log(
         "%c " + r + " ",
-        "text-shadow: 0 0 10px #00dc82,0 0 20px #00dc82,0 0 30px #00dc82,0 0 40px #092420,0 0 70px #092420,0 0 80px #092420,0 0 100px #092420,0 0 150px #092420;padding:20px 0;font-size:16px;"
+        "text-shadow: 0 0 10px #9a9a9a,0 0 20px #9a9a9a,0 0 30px #9a9a9a,0 0 40px #092420,0 0 70px #092420,0 0 80px #092420,0 0 100px #092420,0 0 150px #092420;padding:20px 0;font-size:16px;"
       );
       return r;
     },

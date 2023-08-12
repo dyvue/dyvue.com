@@ -94,7 +94,7 @@ export default {
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  globalName: "dyvue",
+  globalName: "nuxt@dyvue",
   globals: {
     id: globalName => `${globalName}`,
   },

@@ -10,9 +10,6 @@
   @apply py-12
 .headerFlex
   @apply w-full flex justify-between items-center
-.headerLogo
-  @apply w-16
-  animation: rotation 3s infinite linear
 .headerHamburger
   display: none
 .headerNavigation
@@ -29,7 +26,7 @@
     left: 0
     width: 0
     height: 2px
-    background-color: $cPrimary
+    background-color: var(--color-primary)
     transition: .4s all
   &:hover:before 
     width: 20px
@@ -41,14 +38,8 @@
     left: 0
     width: 20px
     height: 2px
-    background-color: $cPrimary
+    background-color: var(--color-primary)
     transition: .4s all
-
-@keyframes rotation
-  from
-    transform: rotate(0deg)
-  to
-    transform: rotate(359deg)
 
 @media (max-width: 992px)
   .screens
@@ -60,15 +51,15 @@
   .header
     @apply py-6
   .headerFlex
-    @apply w-full flex justify-between items-center
+    @apply w-full flex justify-center items-center
   .headerHamburger
     display: block
   .headerNavigation
     z-index: 999999
     opacity: 0
     position: absolute
-    background-color: $cDarkOver
-    border: 2px solid $cWhite
+    background-color: var(--color-dark)Over
+    border: 2px solid var(--color-white)
     top: 80px
     right: 1.5rem
     width: 200px

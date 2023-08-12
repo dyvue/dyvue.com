@@ -24,6 +24,9 @@
     background-image: url(../icons/chainlink.svg)
   &-arbitrum
     background-image: url(../icons/arbitrum.svg)
+  &-lightbulb-on
+    background-image: url(../icons/lightbulb-on.svg)
+    transform: rotate(180deg)
 
 .icon-nav
   background-position: 50%
@@ -63,3 +66,22 @@
 .nuxt-link-exact-active
   .icon-nav
     background-color: #00dc82
+
+body.light .nuxt-link-exact-active
+  span
+    color: #0451fb
+
+body.light .nuxt-link-exact-active
+  .icon-nav
+    background-color: #0451fb
+
+body.light .icon
+  &-email
+    background-image: url(../icons/email-dark.svg)
+  &-github
+    background-image: url(../icons/github-dark.svg)
+  &-twitter
+    background-image: url(../icons/twitter-dark.svg)
+  &-lightbulb-on
+    background-image: url(../icons/lightbulb-night.svg)
+    transform: rotate(180deg)
