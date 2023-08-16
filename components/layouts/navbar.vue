@@ -4,7 +4,7 @@
       <div :class="$style.headerFlex">
         <a href="javascript:void(0)" @click="toggleTheme()" :class="$style.headerBrand">
           <img src="@/assets/img/logo.png" alt="D" :class="$style.headerImg">
-          <h1 :class="$style.h1">Ramadhan.</h1>
+          <h1 :class="$style.h1">R...</h1>
         </a>
         <a v-if="!isMobile()" href="javascript:void(0)" :class="$style.headerHamburger">
           <i class="icon icon-menu w-6 h-6 vertical-middle mt-1"></i>
@@ -17,9 +17,9 @@
             >Projects</nuxt-link
           >
           <nuxt-link
-            to="/blog"
+            to="/posts"
             :class="$style.headerNavigationLink"
-            :active="navigationActive('blog')"
+            :active="navigationActive('posts')"
             >Blog</nuxt-link
           >
           <nuxt-link

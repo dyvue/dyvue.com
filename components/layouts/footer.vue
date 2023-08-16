@@ -27,12 +27,12 @@
               @dyvue
             </p>
           </a>
-          <a target="blank" href="https://twitter.com/dyvue" :class="$style.socialItem">
+          <a target="blank" href="https://twitter.com/rmd0x" :class="$style.socialItem">
             <i class="icon icon-twitter w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Twitter</span>
               <br>
-              @dyvue
+              @rmd0x
             </p>
           </a>
           <!-- <a href="javascript:void(0)" :class="$style.socialItem" @click="copyBtcAddr()">

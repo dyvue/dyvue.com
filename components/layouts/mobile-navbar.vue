@@ -18,9 +18,9 @@
         <span :class="$style.mobileNavbarText">Projects</span>
       </nuxt-link>
       <nuxt-link
-        to="/blog"
+        to="/posts"
         :class="$style.mobileNavbarLink"
-        :active="navigationActive('blog')"
+        :active="navigationActive('posts')"
       >
         <i class="icon-nav icon-nav-blog w-6 h-6 align-middle"></i>
         <span :class="$style.mobileNavbarText">Blog</span>

@@ -87,7 +87,26 @@
       color: var(--color-primary)
       line-height: 12px
       text-align: middle
-
+.blogList
+  @apply flex flex-col gap-2 py-4
+  border-bottom: 0.3px solid var(--color-block)
+  h2
+    @apply text-lg font-bold
+  h5
+    color: var(--color-block)
+.blogContent
+  @apply flex flex-col gap-6
+  h1
+    @apply text-2xl font-bold
+  h5
+    color: var(--color-block)
+  p
+    @apply text-justify mt-6
+  p:nth-child(1)
+    @apply mt-0
+  .blogContentBack
+    @apply flex items-center gap-2 mt-6
+    color: var(--color-block)
 
 @media (max-width: 1600px)
 
