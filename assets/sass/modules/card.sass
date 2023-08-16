@@ -13,18 +13,20 @@
   left: 0
   width: 100%
   height: 200px
-  background-color: rgba(241, 241, 241, .1)
+  background-color: rgba(0, 0, 0, .5)
   opacity: 1
   transition: .4s all
+  border-radius: 10px
 .cardThumbnail
   width: 100%
   height: 200px
   object-fit: cover
-  transition: .4s all
+  transition: .1s all
+  border-radius: 10px
 .card:hover .cardOverlay
   opacity: 0
 .card:hover .cardThumbnail
-  transform: scale(.95)
+  border: 3px dashed var(--color-white)
 .cardDescription
   @apply mt-6
 .cardDescriptionTitle

@@ -10,6 +10,10 @@
   @apply py-12
 .headerFlex
   @apply w-full flex justify-between items-center
+.headerBrand
+  @apply flex gap-2
+.headerImg
+  @apply w-12 h-12
 .headerHamburger
   display: none
 .headerNavigation
@@ -40,6 +44,8 @@
     height: 2px
     background-color: var(--color-primary)
     transition: .4s all
+.headerNavigationLinkToggle i
+  @apply pt-6
 
 @media (max-width: 992px)
   .screens

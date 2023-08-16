@@ -2,19 +2,14 @@
   <header :class="$style.header">
     <div :class="$style.screens">
       <div :class="$style.headerFlex">
-        <a href="javascript:void(0)" @click="toggleTheme()">
-          <i class="icon icon-lightbulb-on w-8 h-8 vertical-middle"></i>
+        <a href="javascript:void(0)" @click="toggleTheme()" :class="$style.headerBrand">
+          <img src="@/assets/img/logo.png" alt="D" :class="$style.headerImg">
+          <h1 :class="$style.h1">Ramadhan.</h1>
         </a>
         <a v-if="!isMobile()" href="javascript:void(0)" :class="$style.headerHamburger">
           <i class="icon icon-menu w-6 h-6 vertical-middle mt-1"></i>
         </a>
         <div v-if="!isMobile()" :class="$style.headerNavigation">
-          <nuxt-link
-            to="/"
-            :class="$style.headerNavigationLink"
-            :active="navigationActive('/')"
-            >Home</nuxt-link
-          >
           <nuxt-link
             to="/projects"
             :class="$style.headerNavigationLink"
