@@ -5,7 +5,7 @@
         <div :class="$style.page">
           <h2 :class="$style.h3">Where Ideas Come Alive ✨</h2>
           <br>
-          <p :class="$style.block">Explore my portfolio of award-winning projects and witness the culmination of my passion and expertise. 🏆</p>
+          <p :class="$style.block">Here, you'll find a curated selection of projects I've completed.<br>And there are some that I still always update because of the good cooperative relationship with clients</p>
           <br><br>
           <div :class="$style.projectGrid">
             <c-card
