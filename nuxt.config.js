@@ -95,10 +95,6 @@ export default {
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  globalName: "nuxt@ramadhanep",
-  globals: {
-    id: globalName => `${globalName}`,
-  },
   build: {
     publicPath: "/0x00000000000000000000000000000000",
     loaders: {
