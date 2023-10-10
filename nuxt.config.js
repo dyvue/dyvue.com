@@ -12,7 +12,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Dyvue',
+    title: 'Ramadhan',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,9 +21,9 @@ export default {
       { name: "google-site-verification", content: "w2tKgPWu24ur4xsvhTai56PK_2EU4nM5wLk0gy4QAe8" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: `Hey, I am Ramadhan 👋 A software developer.` },
-      { property:"og:title", content:"Dyvue"},
+      { property:"og:title", content:"Ramadhan"},
       { property:"og:description", content:`Hey, I am Ramadhan 👋 A software developer.`},
-      { property:"og:url", content:"https://dyvue.com"},
+      { property:"og:url", content:"https://ramadhanep.com"},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -82,12 +82,12 @@ export default {
   // PWA configuration
   pwa: {
     manifest: {
-      name: 'Dyvue',
+      name: 'Ramadhan',
       lang: 'en',
       display: 'standalone',
     },
     meta: {
-      name: "Dyvue",
+      name: "Ramadhan",
       description: "Hey, I am Ramadhan 👋 A software developer.",
       theme_color: "#090b0b",
     }
@@ -95,7 +95,7 @@ export default {
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  globalName: "nuxt@dyvue",
+  globalName: "nuxt@ramadhanep",
   globals: {
     id: globalName => `${globalName}`,
   },

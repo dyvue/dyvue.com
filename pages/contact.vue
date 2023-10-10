@@ -19,7 +19,7 @@
 <script>
 export default {
   head: {
-    title: 'Contact - Dyvue',
+    title: 'Contact - Ramadhan',
   },
   data() {
     return {

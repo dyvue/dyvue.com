@@ -35,7 +35,7 @@
 import Card from "@/components/basics/card"
 export default {
   head: {
-    title: 'Project - Dyvue',
+    title: 'Project - Ramadhan',
   },
   components: {
     "c-card": Card

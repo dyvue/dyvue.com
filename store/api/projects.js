@@ -15,7 +15,7 @@ const data = [
     release: "2023 Jan",
     technologies: ["Flutter"],
     description: "",
-    link: "https://github.com/dyvue/cuwit",
+    link: "https://github.com/ramadhanep/cuwit",
     screenshoot: "cuwit.jpg",
     category: {
       name: "Flutter Opensource Social Media"
@@ -92,7 +92,7 @@ const data = [
     release: "2023 Jun",
     technologies: ["Vuejs"],
     description: "Laravel developer",
-    link: "https://github.com/dyvue/wp2_mangan",
+    link: "https://github.com/ramadhanep/wp2_mangan",
     screenshoot: "mangan.jpg",
     category: {
       name: "Codeigniter 4 Web Application"
@@ -103,7 +103,7 @@ const data = [
     release: "2021 Mar",
     technologies: ["Tailwind CSS"],
     description: "Virtual healthcare for you",
-    link: "https://github.com/dyvue/vicare",
+    link: "https://github.com/ramadhanep/vicare",
     screenshoot: "vicare.jpg",
     category: {
       name: "HTML Web Template"
@@ -137,7 +137,7 @@ const data = [
     technologies: ["Private School Project"],
     description:
       "Artificial Intelligence, Speech Recognition",
-    link: "https://github.com/dyvue/romadhanedy.my.id/blob/main/assets/video/nabila.mp4?raw=true",
+    link: "https://github.com/ramadhanep/romadhanedy.my.id/blob/main/assets/video/nabila.mp4?raw=true",
     screenshoot: "nabila.png",
     category: {
       name: "Vanilla Javascript Voice Assistant, Integrated with raspberrypi"
@@ -160,7 +160,7 @@ const data = [
     release: "2020 Mar",
     technologies: ["Cordova", "Sqlite"],
     description: "Guitar chord app",
-    link: "https://github.com/dyvue/dychord",
+    link: "https://github.com/ramadhanep/dychord",
     screenshoot: "dychord.jpg",
     category: {
       name: "Android Application"
@@ -171,7 +171,7 @@ const data = [
     release: "2020 Feb",
     technologies: ["Laravel", "Mysql"],
     description: "Restaurant cashier app",
-    link: "https://github.com/dyvue/dyresto",
+    link: "https://github.com/ramadhanep/dyresto",
     screenshoot: "dyresto.jpg",
     category: {
       name: "Laravel Web Application"
@@ -193,7 +193,7 @@ const data = [
     release: "2019 Nov",
     technologies: ["Laravel", "Mysql"],
     description: "Point of sale (LSP SMKN 10 Jakarta)",
-    link: "https://github.com/dyvue/dyposten",
+    link: "https://github.com/ramadhanep/dyposten",
     screenshoot: "dyposten.jpg",
     category: {
       name: "Laravel Web Application"
@@ -204,7 +204,7 @@ const data = [
     release: "2019 Mar",
     technologies: ["PHP", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Disposisi",
-    link: "https://github.com/dyvue/bnpb-disposisi",
+    link: "https://github.com/ramadhanep/bnpb-disposisi",
     screenshoot: "disposisi.jpg",
     category: {
       name: "PHP Native Web Application"
@@ -216,7 +216,7 @@ const data = [
     release: "2019 Feb",
     technologies: ["Laravel", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Pendataan Bantuan BPBD",
-    link: "https://github.com/dyvue/bnpb-bantuan-bpbd",
+    link: "https://github.com/ramadhanep/bnpb-bantuan-bpbd",
     screenshoot: "bantuan-bpbd.jpg",
     category: {
       name: "Laravel Web Application"
@@ -227,7 +227,7 @@ const data = [
     release: "2019 Jan",
     technologies: ["Laravel", "Mysql"],
     description: "BNPB Indonesia - Aplikasi Realiasasi Anggaran",
-    link: "https://github.com/dyvue/bnpb-realisasi-anggaran",
+    link: "https://github.com/ramadhanep/bnpb-realisasi-anggaran",
     screenshoot: "realisasi-anggaran.jpg",
     category: {
       name: "Laravel Web Application"
@@ -261,7 +261,7 @@ const data = [
   //   release: "2020 Jun",
   //   technologies: ["Laravel", "Mysql"],
   //   description: "INDOHP Task Report Application",
-  //   link: "https://gitlab.com/dyvue/indohptaskreport",
+  //   link: "https://gitlab.com/ramadhanep/indohptaskreport",
   //   screenshoot: "indohp-taskreport.jpg",
   //   category: {
   //     name: "Laravel Web Application"

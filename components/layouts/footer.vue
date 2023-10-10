@@ -19,12 +19,12 @@
               ramadhanep
             </p>
           </a>
-          <a target="blank" href="https://github.com/dyvue/" :class="$style.socialItem">
+          <a target="blank" href="https://github.com/ramadhanep/" :class="$style.socialItem">
             <i class="icon icon-github w-10 h-10 vertical-middle"></i>
             <p :class="$style.block">
               <span :class="$style.textWhite">Github</span>
               <br>
-              @dyvue
+              @ramadhanep
             </p>
           </a>
           <a target="blank" href="https://twitter.com/rmd0x" :class="$style.socialItem">
